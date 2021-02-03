@@ -28,8 +28,8 @@ const App = () => {
     };
 
     setPeople([...people, newPerson]);
-    person.firstName = "";
-    person.lastName = "";
+
+    setPerson({ firstName: "", lastName: "" });
   };
   return (
     <div className="container">
