@@ -7,7 +7,8 @@ const addPerson = (person, state) => {
     people: newPeople,
   };
 };
-export default (state, action) => {
+
+var reducer = (state, action) => {
   switch (action.type) {
     case ADD_PERSON:
       return addPerson(action.payload, state);
@@ -15,3 +16,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default reducer;

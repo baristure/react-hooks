@@ -7,6 +7,7 @@ import NewestPerson from "./components/NewestPerson";
 import PeopleContext from "./context/peopleContext";
 import peopleReducer from "./context/peopleReducer";
 import { ADD_PERSON } from "./context/types";
+
 const App = () => {
   const initialState = {
     people: [
